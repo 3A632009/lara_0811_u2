@@ -52,3 +52,7 @@ Route::group(['prefix'=>'admin'],function(){
         return'admindashboard';
     });
 });
+
+//7.1編輯 app/Http/routes.php
+Route::get('/',['as'=>'home.index','uses'=>
+    'HomeController@index']);
