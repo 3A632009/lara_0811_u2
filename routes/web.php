@@ -36,4 +36,9 @@ Route::get('hello/{name?}',function($name='Everybody'){
     return'Hello,'.$name;
 });
 
+//4.1將 Route 取名為 hello.index
+Route::get('hello/{name?}',['as'=>'hello.index',function($name=
+                                                         'Everybody'){
+    return'Hello,'.$name;
+}]);
 
