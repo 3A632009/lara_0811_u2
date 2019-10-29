@@ -12,18 +12,23 @@
 */
 
 //1.1設定 Route 回傳字串
-Route::get('/',function(){
-    return'welcome';
-});
+//Route::get('/',function(){
+//    return'welcome';
+//});
 
 //1.2設定 Route 回傳 view
 Route::get('/',function(){
-    returnview('welcome');
+    return view('welcome');
 });
 
 //1.3設定 Route 跳轉頁面
-Route::get('/',function(){
-returnredirect('welcome');
+//Route::get('/',function(){
+//return redirect('welcome');
+//});
+
+//2.1修改 Route 接受參數
+Route::get('hello/{name}',function($name){
+    return'Hello,'.$name;
 });
 
 
