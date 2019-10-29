@@ -11,21 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-//設定 Route 回傳字串
+//1.1設定 Route 回傳字串
 Route::get('/',function(){
     return'welcome';
 });
 
-//設定 Route 回傳 view
+//1.2設定 Route 回傳 view
 Route::get('/',function(){
     returnview('welcome');
 });
 
-//設定 Route 跳轉頁面
+//1.3設定 Route 跳轉頁面
 Route::get('/',function(){
-    returnredirect('welcome');
+returnredirect('welcome');
 });
+
+
+
